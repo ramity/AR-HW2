@@ -1,0 +1,9 @@
+version: '3.3'
+services:
+    opencv:
+        container_name: AR_opencv
+        build:
+            context: ./docker/ar-opencv
+            dockerfile: Dockerfile
+        volumes:
+            - ./src:/project
